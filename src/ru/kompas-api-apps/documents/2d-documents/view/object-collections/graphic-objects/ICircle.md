@@ -2,59 +2,13 @@
 
 ## Иерархия наследования
 
-<style>
-.top-parent{
-    color: #ffe3d8;
-    background: green;
-    border: 3px solid #046709;
-    border-radius: 4px;
-    padding: 5px;
-    text-align: center;
-    margin-bottom: 5px;
-    font-weight: bold;
-    width: 40%;
-    max-width: 220px;
-}
-
-.other-parents{
-    color: #ffe3d8;
-    background: #4a6fa5;
-    border: 3px solid #3d5b87;
-    border-radius: 4px;
-    padding: 5px;
-    text-align: center;
-    margin: 5px 10%;
-    font-weight: bold;
-    width: 40%;
-    max-width: 220px;
-}
-
-.interface{
-    color: #ffe3d8;
-    background: #103874;
-    border: 3px solid #002152;
-    border-radius: 4px;
-    padding: 5px;
-    text-align: center;
-    margin: 5px 10%;
-    font-weight: bold;
-    width: 40%;
-    max-width: 220px;
-}
-</style>
-
-<div style="padding: 10px; background: #f5f5f5; border-radius: 5px; max-width: auto; margin-bottom: 20px">
-<div class="top-parent">IAPIObject</div>
-
-<div style="text-align: left; color:black; margin: 5px 15%;">▼</div>
-<div class="other-parents">IKompasAPIObject</div>
-
-<div style="text-align: left; color:black; margin: 5px 25%;">▼</div>
-<div class="other-parents" style="margin: 5px 20%;">IDrawingObject</div>
-
-<div style="text-align: left; color:black; margin: 5px 35%;">▼</div>
-<div class="interface" style="margin: 5px 30%;">ICircle</div>
-</div>
+```mermaid
+graph TD
+    A[IAPIObject] --> B[IKompasAPIObject]
+    B --> C[IKompasCollection]
+    C --> D[IDrawingObjects]
+    D --> E[ICircle]
+```
 
 ## Общее описание
 
@@ -78,8 +32,8 @@
 
 1. **Из коллекции окружностей:**
    - [`IDrawingContainer::GetCircles()`](../IDrawingContainer.md) - получение коллекции окружностей из контейнера чертежа
-   - [`ICircles::Add()`](../Графические объекты/ICircles.md) - создание новой окружности
-   - [`ICircles::GetCircle(index)`](../Графические объекты/ICircles.md) - получение окружности по индексу
+   - [`ICircles::Add()`](/ICircles.md) - создание новой окружности
+   - [`ICircles::GetCircle(index)`](/ICircles.md) - получение окружности по индексу
 
 2. **Из документа или контекста:**
    - При работе с эскизом 3D модели через `IFragmentDocument`
@@ -341,7 +295,7 @@ circle->Update();
 
 ### SetRadius / GetRadius
 
-[Группа 3: Радиус](#группа-3-радиус) | [К оглавлению](#методы-интерфейса)
+[Группа 3: Радиус](#радиус) | [К оглавлению](#методы-интерфейса)
 
 **Кратко:** Установка и получение радиуса окружности.
 

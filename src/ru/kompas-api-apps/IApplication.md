@@ -4,51 +4,6 @@
 
 ## Иерархия наследования
 
-<style>
-.top-parent{
-    color: #ffe3d8;
-    background: green;
-    border: 3px solid #046709;
-    border-radius: 4px;
-    padding: 5px;
-    text-align: center;
-    margin-bottom: 5px;
-    font-weight: bold;
-    width: 40%;
-    max-width: 220px;
-}
-
-.other-parents{
-    color: #ffe3d8;
-    background: #4a6fa5;
-    border: 3px solid #3d5b87;
-    border-radius: 4px;
-    padding: 5px;
-    text-align: center;
-    margin: 5px 10%;
-    font-weight: bold;
-    width: 40%;
-    max-width: 220px;
-}
-
-.interface{
-    color: #ffe3d8;
-    background: #103874;
-    border: 3px solid #002152;
-    border-radius: 4px;
-    padding: 5px;
-    text-align: center;
-    margin: 5px 10%;
-    font-weight: bold;
-    width: 40%;
-    max-width: 220px;
-}
-</style>
-
-<div style="padding: 10px; background: #f5f5f5; border-radius: 5px; max-width: auto; margin-bottom: 20px">
-<div class="interface" style="margin: 5px 30%;">IApplication</div>
-</div>
-
 ```mermaid
 graph TD
     A[IApplication]
@@ -675,7 +630,7 @@ virtual void SetHideMessage(ksHideMessageEnum hideMessage) = 0;
 
 ### GetSystemSettings
 
-[Группа 5: Система и настройки](#группа-5-система-и-настройки) | [К оглавлению](#методы-интерфейса)
+[Группа 5: Система и настройки](#система-и-настройки) | [К оглавлению](#методы-интерфейса)
 
 **Кратко:** Возвращает интерфейс системных настроек КОМПАС.
 
@@ -693,7 +648,7 @@ virtual ISystemSettingsPtr GetSystemSettings() = 0;
 
 ### GetSystemVersion
 
-[Группа 5: Система и настройки](#группа-5-система-и-настройки) | [К оглавлению](#методы-интерфейса)
+[Группа 5: Система и настройки](#система-и-настройки) | [К оглавлению](#методы-интерфейса)
 
 **Кратко:** Возвращает версию приложения КОМПАС.
 
@@ -716,7 +671,7 @@ virtual bool GetSystemVersion(int32_t & major, int32_t & minor, int32_t & releas
 
 ### GetBuildNumber
 
-[Группа 5: Система и настройки](#группа-5-система-и-настройки) | [К оглавлению](#методы-интерфейса)
+[Группа 5: Система и настройки](#система-и-настройки) | [К оглавлению](#методы-интерфейса)
 
 **Кратко:** Возвращает номер сборки приложения.
 
@@ -734,7 +689,7 @@ virtual int32_t GetBuildNumber() = 0;
 
 ### GetKompasError
 
-[Группа 5: Система и настройки](#группа-5-система-и-настройки) | [К оглавлению](#методы-интерфейса)
+[Группа 5: Система и настройки](#система-и-настройки) | [К оглавлению](#методы-интерфейса)
 
 **Кратко:** Возвращает интерфейс для работы с ошибками КОМПАС.
 
@@ -765,7 +720,7 @@ else if (ksapi::IKompasErrorPtr error = kompasApp->GetKompasError())
 
 ### GetApplicationName
 
-[Группа 5: Система и настройки](#группа-5-система-и-настройки) | [К оглавлению](#методы-интерфейса)
+[Группа 5: Система и настройки](#система-и-настройки) | [К оглавлению](#методы-интерфейса)
 
 **Кратко:** Возвращает имя приложения КОМПАС.
 
@@ -785,7 +740,7 @@ virtual std::wstring GetApplicationName(bool fullName) = 0;
 
 ### GetMainWindowHandle
 
-[Группа 5: Система и настройки](#группа-5-система-и-настройки) | [К оглавлению](#методы-интерфейса)
+[Группа 5: Система и настройки](#система-и-настройки) | [К оглавлению](#методы-интерфейса)
 
 **Кратко:** Возвращает дескриптор главного окна КОМПАС.
 
@@ -803,7 +758,7 @@ virtual WindowHandle GetMainWindowHandle() = 0;
 
 ### GetCurrentDirectory / SetCurrentDirectory
 
-[Группа 5: Система и настройки](#группа-5-система-и-настройки) | [К оглавлению](#методы-интерфейса)
+[Группа 5: Система и настройки](#система-и-настройки) | [К оглавлению](#методы-интерфейса)
 
 **Кратко:** Получить/установить текущий каталог приложения.
 
@@ -842,7 +797,7 @@ virtual IApplicationEventsPtr Events() = 0;
 
 ### GetMath2D
 
-[Группа 5: Система и настройки](#группа-5-система-и-настройки) | [К оглавлению](#методы-интерфейса)
+[Группа 5: Система и настройки](#система-и-настройки) | [К оглавлению](#методы-интерфейса)
 
 **Кратко:** Возвращает интерфейс 2D математики.
 

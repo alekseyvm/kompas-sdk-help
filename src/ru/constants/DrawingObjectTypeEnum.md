@@ -1,6 +1,6 @@
 ---
-title: Заголовок Перечисление DrawingObjectTypeEnum
-description: Описание Перечисление DrawingObjectTypeEnum
+title: Перечисление DrawingObjectTypeEnum
+description: Перечисление DrawingObjectTypeEnum
 ---
 
 <!-- # **Документация перечисления КОМПАС API** -->

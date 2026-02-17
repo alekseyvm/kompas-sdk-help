@@ -1,7 +1,7 @@
-title: Перечисление
+title: Перечисления
 href: index.yaml
 items:
-  - name: Перечисление
+  - name: Перечисления
     expanded: true
     items:
       name: Перечисление DrawingObjectTypeEnum

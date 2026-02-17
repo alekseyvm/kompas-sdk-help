@@ -45,7 +45,7 @@ items:
 #      mode: link
   - name: База КОМПАС API
     href: kompas-api-base/index.yaml
-    expanded: true
+    expanded: false
     items:
       - include:
           path: ru/kompas-api-base/toc.yaml
@@ -55,7 +55,7 @@ items:
           order: asc
   - name: Приложения КОМПАС API
     href: kompas-api-apps/index.yaml
-    expanded: true
+    expanded: false
     items:
       - include:
           path: ru/kompas-api-apps/toc.yaml

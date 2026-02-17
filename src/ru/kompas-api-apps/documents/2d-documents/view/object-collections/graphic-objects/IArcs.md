@@ -4,63 +4,6 @@
 
 ## Иерархия наследования
 
-<style>
-.top-parent{
-    color: #ffe3d8;
-    background: green;
-    border: 3px solid #046709;
-    border-radius: 4px;
-    padding: 5px;
-    text-align: center;
-    margin-bottom: 5px;
-    font-weight: bold;
-    width: 40%;
-    max-width: 220px;
-}
-
-.other-parents{
-    color: #ffe3d8;
-    background: #4a6fa5;
-    border: 3px solid #3d5b87;
-    border-radius: 4px;
-    padding: 5px;
-    text-align: center;
-    margin: 5px 10%;
-    font-weight: bold;
-    width: 40%;
-    max-width: 220px;
-}
-
-.interface{
-    color: #ffe3d8;
-    background: #103874;
-    border: 3px solid #002152;
-    border-radius: 4px;
-    padding: 5px;
-    text-align: center;
-    margin: 5px 10%;
-    font-weight: bold;
-    width: 40%;
-    max-width: 220px;
-}
-</style>
-
-<div style="padding: 10px; background: #f5f5f5; border-radius: 5px; max-width: auto; margin-bottom: 20px">
-<div class="top-parent">IAPIObject</div>
-
-<div style="text-align: left; color:black; margin: 5px 15%;">▼</div>
-<div class="other-parents">IKompasAPIObject</div>
-
-<div style="text-align: left; color:black; margin: 5px 25%;">▼</div>
-<div class="other-parents">IKompasCollection</div>
-
-<div style="text-align: left; color:black; margin: 5px 35%;">▼</div>
-<div class="other-parents">IDrawingObjects</div>
-
-<div style="text-align: left; color:black; margin: 5px 45%;">▼</div>
-<div class="interface" style="margin: 5px 30%;">IArcs</div>
-</div>
-
 ```mermaid
 graph TD
     A[IAPIObject] --> B[IKompasAPIObject]
@@ -109,9 +52,9 @@ ksapi::IArcsPtr arcs = container->GetArcs();
 Интерфейс IArcs связан со следующими интерфейсами:
 
 - **[`IArc`](IArc.md)** - интерфейс отдельной дуги, содержит все методы для настройки параметров дуги
-- **[`IDrawingContainer`](IDrawingContainer.md)** - контейнер, предоставляющий доступ к коллекции дуг
+- **[`IDrawingContainer`](../IDrawingContainer.md)** - контейнер, предоставляющий доступ к коллекции дуг
 - **[`IDrawingObjects`](IDrawingObjects.md)** - базовый интерфейс для коллекций графических объектов
-- **[`IKompasCollection`](IKompasCollection.md)** - базовый интерфейс для всех коллекций API
+- **[`IKompasCollection`](../IKompasCollection.md)** - базовый интерфейс для всех коллекций API
 
 ## Методы интерфейса
 
