@@ -1,0 +1,69 @@
+title: SDK КОМПАС-3D
+href: index.yaml
+
+analytics:
+  text: 'Мы используем файлы cookie, чтобы вы могли наилучшим образом пользоваться нашим веб-сайтом. Если вы продолжаете использовать наш веб-сайт, мы полагаем, что вы согласны с таким использованием.'
+  buttons:
+    accept:
+      text: "Ок"
+      theme: "accent"
+      size: "xl"
+
+navigation:
+  logo:
+    url: "https://help.ascon.ru/KOMPAS_SDK/24/ru-RU"
+    dark:
+      icon: "https://help.ascon.ru/KOMPAS_SDK/24/ru-RU/images/kompas-logo.svg"
+    light:
+      icon: "https://help.ascon.ru/KOMPAS_SDK/24/ru-RU/images/kompas-logo.svg"
+  header:
+    leftItems:
+      - text: "Оглавление"
+        type: "link"
+        url: "../ru"
+      - text: "Помощь"
+        type: "link"
+        url: "./help"
+    rightItems:
+      - text: "Сайт АСКОН"
+        type: "link"
+        url: "https://ascon.ru"
+      - text: "Поиск"
+        type: "search"
+      - type: 'controls'
+
+items:
+  - name: Перечисления
+    include:
+      path: ru/constants/toc.yaml
+#  - name: _kompas-api-apps_
+#    include:
+#      path: kompas-api-docs # путь к директории с .md файлами для сгененированного контента
+#      includers: # подключение generic includer
+#        - name: kompas-api-apps
+#          autotitle: true   # опционально: при false, проставляет в структуру название md-файлов, при true — название заголовков, по умолчанию true
+#      mode: link
+  - name: База КОМПАС API
+    href: kompas-api-base/index.yaml
+    expanded: true
+    items:
+      - include:
+          path: ru/kompas-api-base/toc.yaml
+          type: files
+          pattern: "*.md"
+          sort: name
+          order: asc
+  - name: Приложения КОМПАС API
+    href: kompas-api-apps/index.yaml
+    expanded: true
+    items:
+      - include:
+          path: ru/kompas-api-apps/toc.yaml
+          type: files
+          pattern: "*.md"
+          sort: name
+          order: asc
+  - name: Помощь
+    href: help.md
+  - name: Правила
+    href: rules.md

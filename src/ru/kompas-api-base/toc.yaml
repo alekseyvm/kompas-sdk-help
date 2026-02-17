@@ -1,0 +1,10 @@
+title: База KOMPAS API
+href: index.yaml
+items:
+  - name: Интерфейсы
+    expanded: false
+    items:
+      - name: IAPIObject
+        href: kompas-api-base/IAPIObject.md
+      - name: IKompasAPIObject
+        href: kompas-api-base/IKompasAPIObject.md

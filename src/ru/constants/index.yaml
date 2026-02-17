@@ -1,0 +1,6 @@
+title: title constants/index.yaml
+description: description constants/index.yaml
+links:
+  - title: title DrawingObjectTypeEnum
+    description: ''
+    href: constants/DrawingObjectTypeEnum

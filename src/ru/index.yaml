@@ -1,0 +1,18 @@
+title: Справочная система SDK КОМПАС-3D
+description: Справочная система SDK КОМПАС-3D
+meta:
+  title: Метаданные
+  noIndex: true
+links:
+- title: Константы
+  href: ./constants
+- title: База KOMPAS API
+  href: ./kompas-api-base
+- title: Приложения KOMPAS API
+  href: ./kompas-api-apps
+- title: Помощь
+  description: Описание всех возможностей того, как связаться с нами
+  href: help.md
+- title: Правила
+  description: Описание платформы, ее основные возможности, особенности и преимущества.
+  href: rules.md

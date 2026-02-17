@@ -1,0 +1,8 @@
+allowHTML: true
+lang: 'ru'
+langs: ['ru', 'en']
+pdf:
+  - enabled: true
+docs-viewer:
+  - logo-options:
+      - src: https://help.ascon.ru/KOMPAS_SDK/24/ru-RU/images/kompas-logo.svg

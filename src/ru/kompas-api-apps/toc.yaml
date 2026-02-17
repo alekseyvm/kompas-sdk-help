@@ -1,0 +1,53 @@
+title: Приложение KOMПAC API
+href: index.yaml
+items:
+  - name: IApplication
+    href: kompas-api-apps/IApplication.md
+  - name: Документы
+    expanded: false
+    items:
+      - name: IDocuments
+        href: kompas-api-apps/documents/IDocuments.md
+      - name: 2D документы
+        expanded: true
+        items:
+          - name: IKompasDocument2D
+            href: kompas-api-apps/documents/2d-documents/IKompasDocument2D.md
+          - name: IViewsAndLayersManager
+            href: kompas-api-apps/documents/2d-documents/IViewsAndLayersManager.md
+          - name: Виды
+            items:
+              - name: IView
+                href: kompas-api-apps/documents/2d-documents/view/IView.md
+              - name: IViews
+                href: kompas-api-apps/documents/2d-documents/view/IViews.md
+          - name: Коллекции объектов
+            items:
+              - name: IDrawingContainer
+                href: kompas-api-apps/documents/2d-documents/view/object-collections/IDrawingContainer.md
+              - name: IKompasCollection
+                href: kompas-api-apps/documents/2d-documents/view/object-collections/IKompasCollection.md
+              - name: Графические объекты
+                items:
+                  - name: IArc
+                    href: kompas-api-apps/documents/2d-documents/view/object-collections/graphic-objects/IArc.md
+                  - name: IArcs
+                    href: kompas-api-apps/documents/2d-documents/view/object-collections/graphic-objects/IArcs.md
+                  - name: ICircle
+                    href: kompas-api-apps/documents/2d-documents/view/object-collections/graphic-objects/ICircle.md
+                  - name: ICircles
+                    href: kompas-api-apps/documents/2d-documents/view/object-collections/graphic-objects/ICircles.md
+                  - name: IDrawingObject
+                    href: kompas-api-apps/documents/2d-documents/view/object-collections/graphic-objects/IDrawingObject.md
+                  - name: IDrawingObjects
+                    href: kompas-api-apps/documents/2d-documents/view/object-collections/graphic-objects/IDrawingObjects.md
+                  - name: IDrawingText
+                    href: kompas-api-apps/documents/2d-documents/view/object-collections/graphic-objects/IDrawingText.md
+                  - name: IDrawingTexts
+                    href: kompas-api-apps/documents/2d-documents/view/object-collections/graphic-objects/IDrawingTexts.md
+                  - name: ILineSegment
+                    href: kompas-api-apps/documents/2d-documents/view/object-collections/graphic-objects/ILineSegment.md
+                  - name: ILineSegments
+                    href: kompas-api-apps/documents/2d-documents/view/object-collections/graphic-objects/ILineSegments.md
+                  - name: IMacroObject
+                    href: kompas-api-apps/documents/2d-documents/view/object-collections/graphic-objects/IMacroObject.md

@@ -1,0 +1,8 @@
+title: Перечисление
+href: index.yaml
+items:
+  - name: Перечисление
+    expanded: true
+    items:
+      name: Перечисление DrawingObjectTypeEnum
+      href: constants/DrawingObjectTypeEnum
